@@ -1,0 +1,13 @@
+sudo apt-get install build-essential dkms git
+git clone https://github.com/aircrack-ng/rtl8812au.git
+cd rtl8812au
+
+Within the folder you can find the instructions on how to install, uninstall etc. the drivers
+
+to confirm that the installation was done successfully you have to use 
+sudo modprobe 88XXau
+
+if the output of this command does not give you any error, the driver was installed correctly
+
+if you are in kali linux, you can use this one command to install the drivers
+apt-get install realtek-rtl88xxau-dkms
