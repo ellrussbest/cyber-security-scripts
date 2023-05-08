@@ -1,7 +1,7 @@
 # enable monitor mode
 
 # the below command will discover all the wireless networks around me
-# airodump-ng <name of wireless adapter>
+airodump-ng <name of wireless adapter>
 airodump-ng mon0
 
 # BSSID<mac address of the target network>
@@ -19,7 +19,7 @@ airodump-ng mon0
 # ESSID<names of the wireless networks>
 
 # ##SNIFFING 5GHZ NETWORK
-# airodump-ng --band a <name of wireless adapter>
+airodump-ng --band a <name of wireless adapter>
 airodump-ng --band a mon0
 
 # the below will capture data on both 2.4 and 5ghz at the same time

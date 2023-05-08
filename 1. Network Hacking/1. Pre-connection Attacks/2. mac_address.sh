@@ -17,15 +17,15 @@ iwconfig
 # ether -> mac address
 
 # in order to change the mac address you first have to disable the interface
-# ifconfig <interface_name> down
+ifconfig <interface_name> down
 ifconfig wlan0 down
 
 # change the option that you want to change
-# ifconfig <interface_name> hw <option> <new mac address>
+ifconfig <interface_name> hw <option> <new mac address>
 ifconfig wlan0 hw ether 00:11:22:33:44:55
 
 # enable the interface
-# ifconfig <interface_name> up
+ifconfig <interface_name> up
 ifconfig wlan0 up
 
 # these are the steps that you should follow to when the mac address reverts back to original

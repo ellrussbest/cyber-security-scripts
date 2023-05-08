@@ -10,7 +10,7 @@ airmon-ng check kill
 
 # WE WILL ONLY NEED TO BE IN MONITOR MODE WHEN WE ARE RUNNING PRECONNECTION ATTACKS
 # i.e. the attacks that do not require us to connect to any network.
-# iwconfig <interface_name> mode monitor
+iwconfig <interface_name> mode monitor
 iwconfig wlan0 mode monitor
 
 # enable the interface
