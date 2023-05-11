@@ -14,7 +14,7 @@
 # if this button is pressed and then you press the WPS button on the router, the printer will
 # connect to the router without you having to enter the key
 # the authentication here, is done using an eight-digit PIN
-# think of this as a password mad up of only eight numbers and the length is only 8
+# think of this as a password made up of only eight numbers and the length is only 8
 # this actually gives us a small list of possible passwords.
 # once we get this pin, it can be used to recover the actual WPA/WPA2 key
 
@@ -26,6 +26,7 @@
 # ##FOR US TO BE ABLE TO CHECK IF WPS IS ENABLED FOR ANY OF OUR WPA/WPA2 NETWORKS, WE NEED TO INSTALL WASH
 ### BELOW ARE THE STEPS FOR INSTALLING REAVER
 :'
+    To Get instructions on how to install Penetration tools you could depend on kali.tools
     How to install Reaver
     The program is pre-installed on Kali Linux.
 
@@ -33,13 +34,6 @@
 
     First, install PixieWPS. Next:
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
     sudo apt-get -y install build-essential libpcap-dev aircrack-ng
     git clone https://github.com/t6x/reaver-wps-fork-t6x
     cd reaver-wps-fork-t6x*/
