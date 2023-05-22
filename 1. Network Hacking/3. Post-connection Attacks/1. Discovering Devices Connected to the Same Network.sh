@@ -37,7 +37,8 @@ zenmap is the GUI of nmap
     - an ssh server. And the password of that server is set to alpine
     - so it is always worth a try to connect with a vulnerable phone like this with
     - the default password.
-    e.g.
-'
 
-ssh root@192.168.1.12 
+    e.g.
+    ssh root@192.168.1.12 
+    password: alpine
+'
