@@ -28,6 +28,12 @@ netdiscover -r 10.0.2.1/24
     7. bypass firewalls
     8. We can also use NMAP to gain access using code execution vulnerabilities
 zenmap is the GUI of nmap
+You can download and install Zenmap from nmap official page e.g. https://nmap.org/download
+For the target input box we can put:
+    - Personal computer
+    - server
+    - IP for a web-server (when you want to discover all open ports and services)
+    - You can also put a range 
 '
 
 :'

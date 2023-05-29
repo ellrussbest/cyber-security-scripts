@@ -6,3 +6,7 @@ Here you'll learn a number of powerful attacks that will enable you to intercept
 
 We'll also be able to modify the data as it is being served in the air. Thus we'll be able to control the requests and serve people fake updates, inject evil code into the pages that they load etc.
 
+The tools that we will use here include:
+- arpspoof
+- bettercap
+- sslstrip
